@@ -1,0 +1,112 @@
+.top{
+    width : 100vw; height: 120px;
+    display: flex;
+    background-color: red;
+}
+.top #top_left{
+    flex: 2;
+    background-color: orange;
+}
+.top>#top_left>img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.top>#top_left>p{
+    float: left;
+    position: relative;
+    top: 50px;
+}
+.top #top_right{
+    flex: 8;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav{
+    background-color: green;
+    width: 100vw; height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav #nav_content{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.main{
+    background-color: pink;
+    width: 100vw;
+    height: 1000px;
+}
+.main #main_left{
+    width: 20%; height: 100%;
+    background-color: yellow;
+    float: left;
+}
+.main #main_left div{
+    width: 250px; height: 100px;
+    margin: 20px;
+    background-color: orange;
+}
+
+.main #main_left #login{
+    background-color: red;
+}
+
+.main #main_left form{
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+.main #main_left #login input{
+    width: 50%;
+    height: auto;
+}
+
+.main #main_left #board #title{
+    font-weight: bold;
+    text-align: center;
+    color: yellowgreen;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.main #main_left #board a{
+    position: relative;
+    left: 30px;
+}
+
+.main #main_center{
+    float: left;
+    width: 60%; height: 100%;
+}
+.main #main_center img{
+    border: 2px solid greenyellow;
+}
+.main #main_right{
+    width: 20%; height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main #main_right img{
+    width: 100%;
+    height: 100px;
+    /* align-items: center; */
+}
+
+.footer{
+    width: 100vw;
+    height: 70px;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    bottom: 5px;
+}

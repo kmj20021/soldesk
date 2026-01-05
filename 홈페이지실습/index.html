@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>민제 실습 페이지</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- 상단 -->
+         <div class="top">
+            <div id="top_left">
+                <img src="cat.jpg">
+                <p>동물 이미지 갤러리</p>
+            </div>
+            <div id="top_right">
+                <img src="banner_635x120.jpg">
+            </div>
+         </div>
+
+         <!-- 중단 네비게이션바 -->
+          <div class="nav">
+                <div id="nav_content">
+                    <a href="https://naver.com">강아지</a>
+                    <a href="https://naver.com">고양이</a>
+                    <a href="https://naver.com">러버덕</a>
+                </div>
+          </div>
+          <!-- 중단 main -->
+          <div class="main">
+                <div id="main_left">
+                    <div id="login">
+                        <form>
+                            <input type="text" placeholder="아이디"><br>
+                            <input type="password" placeholder="비밀번호"><br>
+                            <button>회원가입</button>
+                            <button type="submit">로그인</button>
+                        </form>
+                    </div>
+                    <div id="board">
+                        <p id="title">게시판</p><br>
+                        <a href=".">우리 강아지는요</a><br>
+                        <a href=".">우리 고양이는요</a><br>
+                        <a href=".">우리 러버덕은요</a><br>
+                    </div>
+                    <div id="board">
+                        <p id="title">우리해 자랑하기</p><br>
+                        <a href=".">자유게시판</a><br>
+                        <a href=".">공지</a><br>
+                        <a href=".">질문/답변</a><br>
+                    </div>
+                </div>
+                    
+                <div id="main_center"></div>
+                    <script>
+                        const mc = document.getElementById("main_center");
+                        for( let i=0; i< 15; i++){
+                            const img = document.createElement("img");
+                            img.src = "dog.png";
+                            img.width = 180;
+                            img.height = 200;
+                            mc.appendChild(img);
+                        }
+                    </script>
+                    
+                
+
+                <div id="main_right">
+                    <img src="레플나라_470x150.gif">
+                    <img src="레플나라_470x150.gif">
+                    <img src="레플나라_470x150.gif">
+                </div>
+          </div>
+        
+          <!-- 하단 -->
+           <div class="footer">
+                <p>copyright 대단한회사</p>
+                <p>개인정보책임자 박한비</p>
+           </div>
+
+    </body>
+</html>
