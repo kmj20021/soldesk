@@ -5,7 +5,6 @@ function new_num () {
     while(arr_num.size <6){
         arr_num.add(Math.floor(Math.random()*45)+1); 
     }
-
     return arr_num;
 }
 
