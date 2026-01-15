@@ -1,0 +1,21 @@
+/* 전체 배경색 설정 및 기본 여백 제거 */
+body {
+    background-color: cornflowerblue;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    height: 100vh;           /* 화면 전체 높이 사용 */
+}
+
+#clock {
+    background-color: pink;
+    font-size: 20pt;
+    /* 고정 크기(width, height)를 삭제하여 내용에 맞게 늘어나도록 설정 */
+    padding: 20px 40px;      /* 상자에 여유 공간(패딩) 추가 */
+    border-radius: 15px;     /* 상자 모서리를 둥글게 (선택 사항) */
+    white-space: nowrap;     /* 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+/* 기존의 * 선택자 배경색은 제거하거나 body로 옮기는 것이 좋습니다. 
+   모든 요소(*)에 배경색을 넣으면 글자 하나하나 뒤에 배경색이 깔릴 수 있기 때문입니다. */
